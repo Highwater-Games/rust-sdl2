@@ -88,6 +88,7 @@ impl From<SensorType> for SDL_SensorType {
             SensorType::Unknown => SDL_SensorType::SDL_SENSOR_UNKNOWN,
             SensorType::Gyroscope => SDL_SensorType::SDL_SENSOR_GYRO,
             SensorType::Accelerometer => SDL_SensorType::SDL_SENSOR_ACCEL,
+            _ => SDL_SensorType::SDL_SENSOR_UNKNOWN,
         }
     }
 }
