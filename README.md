@@ -2,6 +2,9 @@
 
 Bindings for SDL2 in Rust
 
+* A temporary fix for an issue that caused Rust error E0004 (https://doc.rust-lang.org/error_codes/E0004.html) when enabling the library's hidapi feature due to differences between the library's SensorType implementation and SDL's SDL_SensorType implementation.
+* This is not suitable for open source contributions as it does not actually fix the problem. Rather, it is a temporary workaround that treats the SDL implementation which the library does not implement as unknown.
+
 ### [Changelog for 0.37.0](changelog.md#v0370)
 
 # Overview
