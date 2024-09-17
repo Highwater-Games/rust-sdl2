@@ -138,6 +138,7 @@ impl Sensor {
             sys::SDL_SensorType::SDL_SENSOR_UNKNOWN => SensorType::Unknown,
             sys::SDL_SensorType::SDL_SENSOR_ACCEL => SensorType::Accelerometer,
             sys::SDL_SensorType::SDL_SENSOR_GYRO => SensorType::Gyroscope,
+            _ => SensorType::Unknown,
         }
     }
 
